@@ -1,0 +1,136 @@
+{
+  "services": [
+    {
+      "id": "svc_001",
+      "name": "Instagram Followers",
+      "category": "social_media",
+      "platform": "instagram",
+      "description": "Dapatkan followers Instagram real & aktif",
+      "price": 25000,
+      "min_order": 50,
+      "max_order": 10000,
+      "speed": "fast",
+      "isActive": true,
+      "icon": "📸",
+      "provider": "nokos",
+      "provider_service_id": "ig_followers_01",
+      "createdAt": "2026-01-01T00:00:00Z",
+      "updatedAt": "2026-06-27T00:00:00Z",
+      "stats": {
+        "total_orders": 1234,
+        "success_rate": 98.5,
+        "avg_time": "15 menit"
+      }
+    },
+    {
+      "id": "svc_002",
+      "name": "TikTok Views",
+      "category": "social_media",
+      "platform": "tiktok",
+      "description": "Tingkatkan views video TikTok Anda",
+      "price": 15000,
+      "min_order": 100,
+      "max_order": 50000,
+      "speed": "medium",
+      "isActive": true,
+      "icon": "🎵",
+      "provider": "smm",
+      "provider_service_id": "tt_views_01",
+      "createdAt": "2026-01-15T00:00:00Z",
+      "updatedAt": "2026-06-27T00:00:00Z",
+      "stats": {
+        "total_orders": 856,
+        "success_rate": 97.2,
+        "avg_time": "30 menit"
+      }
+    },
+    {
+      "id": "svc_003",
+      "name": "YouTube Subscribers",
+      "category": "social_media",
+      "platform": "youtube",
+      "description": "Tambahan subscriber YouTube premium",
+      "price": 50000,
+      "min_order": 10,
+      "max_order": 5000,
+      "speed": "slow",
+      "isActive": true,
+      "icon": "▶️",
+      "provider": "nokos",
+      "provider_service_id": "yt_subs_01",
+      "createdAt": "2026-02-01T00:00:00Z",
+      "updatedAt": "2026-06-27T00:00:00Z",
+      "stats": {
+        "total_orders": 567,
+        "success_rate": 99.1,
+        "avg_time": "2 jam"
+      }
+    },
+    {
+      "id": "svc_004",
+      "name": "Twitter Retweets",
+      "category": "social_media",
+      "platform": "twitter",
+      "description": "Retweet dan like untuk tweet Anda",
+      "price": 20000,
+      "min_order": 20,
+      "max_order": 1000,
+      "speed": "fast",
+      "isActive": true,
+      "icon": "🐦",
+      "provider": "smm",
+      "provider_service_id": "tw_rt_01",
+      "createdAt": "2026-02-15T00:00:00Z",
+      "updatedAt": "2026-06-27T00:00:00Z",
+      "stats": {
+        "total_orders": 345,
+        "success_rate": 96.8,
+        "avg_time": "10 menit"
+      }
+    },
+    {
+      "id": "svc_005",
+      "name": "Facebook Page Likes",
+      "category": "social_media",
+      "platform": "facebook",
+      "description": "Like untuk halaman Facebook",
+      "price": 30000,
+      "min_order": 25,
+      "max_order": 5000,
+      "speed": "medium",
+      "isActive": true,
+      "icon": "📘",
+      "provider": "nokos",
+      "provider_service_id": "fb_likes_01",
+      "createdAt": "2026-03-01T00:00:00Z",
+      "updatedAt": "2026-06-27T00:00:00Z",
+      "stats": {
+        "total_orders": 234,
+        "success_rate": 97.5,
+        "avg_time": "45 menit"
+      }
+    },
+    {
+      "id": "svc_006",
+      "name": "Telegram Members",
+      "category": "social_media",
+      "platform": "telegram",
+      "description": "Tambahan member grup Telegram",
+      "price": 18000,
+      "min_order": 50,
+      "max_order": 10000,
+      "speed": "fast",
+      "isActive": true,
+      "icon": "📱",
+      "provider": "smm",
+      "provider_service_id": "tg_members_01",
+      "createdAt": "2026-03-15T00:00:00Z",
+      "updatedAt": "2026-06-27T00:00:00Z",
+      "stats": {
+        "total_orders": 789,
+        "success_rate": 98.0,
+        "avg_time": "20 menit"
+      }
+    }
+  ]
+}
