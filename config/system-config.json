@@ -1,0 +1,74 @@
+{
+  "system": {
+    "maintenance": {
+      "is_active": false,
+      "start_time": null,
+      "end_time": null,
+      "message": "Sistem sedang dalam perawatan. Mohon tunggu."
+    },
+    "features": {
+      "registration": {
+        "enabled": true,
+        "require_verification": true,
+        "max_users": 10000
+      },
+      "dashboard": {
+        "real_time_updates": true,
+        "cache_enabled": true,
+        "chart_range": 30
+      },
+      "services": {
+        "auto_approve": false,
+        "queue_time": 5,
+        "max_retries": 3
+      },
+      "notifications": {
+        "enabled": true,
+        "email": true,
+        "push": true,
+        "whatsapp": false
+      }
+    },
+    "limits": {
+      "order_per_user": 100,
+      "daily_orders": 500,
+      "monthly_orders": 10000,
+      "concurrent_orders": 10
+    },
+    "cache": {
+      "enabled": true,
+      "ttl": 3600,
+      "max_size": 100,
+      "redis_host": "localhost",
+      "redis_port": 6379
+    },
+    "security": {
+      "jwt_expiry": "7d",
+      "refresh_token_expiry": "30d",
+      "password_min_length": 8,
+      "require_special_char": true,
+      "require_number": true,
+      "max_login_attempts": 5,
+      "block_duration": 30,
+      "rate_limiting": {
+        "enabled": true,
+        "window_ms": 60000,
+        "max_requests": 60
+      }
+    },
+    "logging": {
+      "level": "info",
+      "file": "/var/log/nokos-smm/app.log",
+      "max_size": "100MB",
+      "max_files": 5,
+      "compress": true
+    },
+    "backup": {
+      "enabled": true,
+      "frequency": "daily",
+      "retention": 7,
+      "path": "/backup/nokos-smm",
+      "compress": true
+    }
+  }
+}
