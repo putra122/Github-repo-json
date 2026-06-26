@@ -1,0 +1,73 @@
+{
+  "settings": {
+    "system": {
+      "name": "Nokos SMM Panel",
+      "version": "2.0.0",
+      "maintenance": false,
+      "maintenance_message": "Sedang maintenance, harap tunggu..."
+    },
+    "payment": {
+      "currency": "IDR",
+      "min_deposit": 10000,
+      "max_deposit": 100000000,
+      "payment_methods": [
+        {
+          "id": "bank_transfer",
+          "name": "Transfer Bank",
+          "isActive": true,
+          "icon": "🏦"
+        },
+        {
+          "id": "credit_card",
+          "name": "Kartu Kredit",
+          "isActive": true,
+          "icon": "💳"
+        },
+        {
+          "id": "e_wallet",
+          "name": "E-Wallet",
+          "isActive": true,
+          "icon": "📱"
+        },
+        {
+          "id": "balance",
+          "name": "Saldo",
+          "isActive": true,
+          "icon": "💰"
+        }
+      ]
+    },
+    "social": {
+      "instagram": {
+        "base_price": 100,
+        "max_order": 10000
+      },
+      "tiktok": {
+        "base_price": 80,
+        "max_order": 50000
+      },
+      "youtube": {
+        "base_price": 200,
+        "max_order": 5000
+      }
+    },
+    "notifications": {
+      "email": {
+        "enabled": true,
+        "host": "smtp.gmail.com",
+        "port": 587,
+        "secure": false
+      },
+      "whatsapp": {
+        "enabled": true,
+        "api_key": "your_whatsapp_api_key"
+      }
+    },
+    "security": {
+      "max_login_attempts": 5,
+      "lockout_duration": 30,
+      "session_timeout": 3600,
+      "two_factor_required": false
+    }
+  }
+}
