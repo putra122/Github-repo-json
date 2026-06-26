@@ -1,1 +1,61 @@
-
+{
+  "users": [
+    {
+      "_id": "user_001",
+      "name": "Admin Utama",
+      "email": "admin@nokos.com",
+      "password": "$2a$10$encrypted_password_hash_here",
+      "role": "superadmin",
+      "balance": 1000000,
+      "phone": "+6281234567890",
+      "isVerified": true,
+      "twoFactorEnabled": false,
+      "googleId": null,
+      "preferences": {
+        "notifications": true,
+        "language": "id"
+      },
+      "lastLogin": "2026-06-27T08:00:00Z",
+      "createdAt": "2026-01-01T00:00:00Z",
+      "updatedAt": "2026-06-27T08:00:00Z"
+    },
+    {
+      "_id": "user_002",
+      "name": "User Biasa",
+      "email": "user@example.com",
+      "password": "$2a$10$encrypted_password_hash_here",
+      "role": "user",
+      "balance": 500000,
+      "phone": "+6281234567891",
+      "isVerified": true,
+      "twoFactorEnabled": false,
+      "googleId": "google_oauth_12345",
+      "preferences": {
+        "notifications": true,
+        "language": "en"
+      },
+      "lastLogin": "2026-06-26T15:30:00Z",
+      "createdAt": "2026-02-15T10:00:00Z",
+      "updatedAt": "2026-06-26T15:30:00Z"
+    },
+    {
+      "_id": "user_003",
+      "name": "Premium User",
+      "email": "premium@example.com",
+      "password": "$2a$10$encrypted_password_hash_here",
+      "role": "user",
+      "balance": 5000000,
+      "phone": "+6281234567892",
+      "isVerified": true,
+      "twoFactorEnabled": true,
+      "googleId": null,
+      "preferences": {
+        "notifications": true,
+        "language": "id"
+      },
+      "lastLogin": "2026-06-27T07:00:00Z",
+      "createdAt": "2026-03-01T08:00:00Z",
+      "updatedAt": "2026-06-27T07:00:00Z"
+    }
+  ]
+}
