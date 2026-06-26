@@ -1,0 +1,57 @@
+{
+  "api": {
+    "nokos": {
+      "base_url": "https://api.nokos.com/v1",
+      "endpoints": {
+        "services": "/services",
+        "order": "/order",
+        "status": "/order/{id}",
+        "balance": "/balance"
+      },
+      "rate_limit": {
+        "requests_per_minute": 60,
+        "max_concurrent": 10
+      },
+      "timeout": 30000
+    },
+    "smm": {
+      "base_url": "https://api.smm.com/v2",
+      "endpoints": {
+        "services": "/services",
+        "order": "/order",
+        "status": "/status",
+        "profile": "/profile"
+      },
+      "rate_limit": {
+        "requests_per_minute": 30,
+        "max_concurrent": 5
+      },
+      "timeout": 30000
+    },
+    "payment": {
+      "midtrans": {
+        "base_url": "https://api.midtrans.com/v2",
+        "endpoints": {
+          "charge": "/charge",
+          "status": "/status/{order_id}",
+          "cancel": "/cancel/{order_id}"
+        }
+      },
+      "xendit": {
+        "base_url": "https://api.xendit.co/v2",
+        "endpoints": {
+          "invoice": "/invoices",
+          "callback": "/callback"
+        }
+      }
+    },
+    "google_oauth": {
+      "scope": [
+        "email",
+        "profile"
+      ],
+      "access_type": "offline",
+      "prompt": "consent"
+    }
+  }
+}
