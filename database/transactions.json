@@ -1,0 +1,73 @@
+{
+  "transactions": [
+    {
+      "_id": "txn_001",
+      "userId": "user_001",
+      "type": "deposit",
+      "amount": 1000000,
+      "status": "success",
+      "description": "Deposit via Bank Transfer",
+      "paymentMethod": "bank_transfer",
+      "paymentId": "pay_123456",
+      "metadata": {
+        "bank": "BCA",
+        "account_number": "1234567890",
+        "reference": "REF-20260601-001"
+      },
+      "createdAt": "2026-06-01T10:00:00Z",
+      "updatedAt": "2026-06-01T10:05:00Z"
+    },
+    {
+      "_id": "txn_002",
+      "userId": "user_002",
+      "type": "service_purchase",
+      "amount": 25000,
+      "status": "success",
+      "description": "Pembelian Instagram Followers",
+      "paymentMethod": "balance",
+      "paymentId": "svc_001_ord_456",
+      "metadata": {
+        "serviceId": "svc_001",
+        "target": "instagram_username",
+        "quantity": 100,
+        "order_id": "ord_456"
+      },
+      "createdAt": "2026-06-27T08:30:00Z",
+      "updatedAt": "2026-06-27T08:35:00Z"
+    },
+    {
+      "_id": "txn_003",
+      "userId": "user_003",
+      "type": "deposit",
+      "amount": 2000000,
+      "status": "pending",
+      "description": "Deposit via Credit Card",
+      "paymentMethod": "credit_card",
+      "paymentId": "pay_789012",
+      "metadata": {
+        "card_type": "visa",
+        "last_four": "1234",
+        "reference": "REF-20260627-002"
+      },
+      "createdAt": "2026-06-27T09:00:00Z",
+      "updatedAt": "2026-06-27T09:00:00Z"
+    },
+    {
+      "_id": "txn_004",
+      "userId": "user_001",
+      "type": "withdrawal",
+      "amount": 500000,
+      "status": "success",
+      "description": "Penarikan dana ke rekening",
+      "paymentMethod": "bank_transfer",
+      "paymentId": "wd_345678",
+      "metadata": {
+        "bank": "Mandiri",
+        "account_number": "0987654321",
+        "reference": "REF-20260625-003"
+      },
+      "createdAt": "2026-06-25T14:00:00Z",
+      "updatedAt": "2026-06-25T14:30:00Z"
+    }
+  ]
+}
