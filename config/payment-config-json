@@ -1,0 +1,99 @@
+{
+  "payment": {
+    "gateways": {
+      "midtrans": {
+        "enabled": true,
+        "server_key": "your_midtrans_server_key",
+        "client_key": "your_midtrans_client_key",
+        "merchant_id": "your_merchant_id",
+        "is_production": false,
+        "payment_methods": [
+          "credit_card",
+          "bank_transfer",
+          "gopay",
+          "shopeepay",
+          "qris"
+        ],
+        "installment": {
+          "enabled": true,
+          "terms": [3, 6, 12],
+          "min_amount": 500000
+        },
+        "promo": {
+          "enabled": true,
+          "discount": 10,
+          "min_amount": 100000
+        }
+      },
+      "xendit": {
+        "enabled": false,
+        "api_key": "your_xendit_api_key",
+        "callback_url": "https://your-domain.com/api/payment/callback"
+      }
+    },
+    "bank_accounts": [
+      {
+        "id": "bca",
+        "name": "Bank Central Asia",
+        "account_name": "PT Nokos SMM",
+        "account_number": "1234567890",
+        "branch": "Jakarta Pusat",
+        "isActive": true
+      },
+      {
+        "id": "mandiri",
+        "name": "Bank Mandiri",
+        "account_name": "PT Nokos SMM",
+        "account_number": "0987654321",
+        "branch": "Jakarta Selatan",
+        "isActive": true
+      },
+      {
+        "id": "bni",
+        "name": "Bank Negara Indonesia",
+        "account_name": "PT Nokos SMM",
+        "account_number": "1357924680",
+        "branch": "Jakarta Barat",
+        "isActive": false
+      }
+    ],
+    "e_wallets": [
+      {
+        "id": "gopay",
+        "name": "GoPay",
+        "logo": "https://example.com/gopay.png",
+        "min_amount": 5000,
+        "max_amount": 10000000,
+        "isActive": true
+      },
+      {
+        "id": "shopeepay",
+        "name": "ShopeePay",
+        "logo": "https://example.com/shopeepay.png",
+        "min_amount": 5000,
+        "max_amount": 10000000,
+        "isActive": true
+      },
+      {
+        "id": "dana",
+        "name": "DANA",
+        "logo": "https://example.com/dana.png",
+        "min_amount": 5000,
+        "max_amount": 10000000,
+        "isActive": true
+      }
+    ],
+    "fees": {
+      "deposit_fee": 0.5,
+      "withdrawal_fee": 2.5,
+      "service_fee": 3.0,
+      "minimum_withdrawal": 50000
+    },
+    "exchange_rates": {
+      "USD": 15500,
+      "IDR": 1,
+      "SGD": 11500,
+      "MYR": 3300
+    }
+  }
+}
